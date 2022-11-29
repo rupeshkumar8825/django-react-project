@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # we have to register/add our application in the settings.py 
     "api",
-    "rest-framework",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
