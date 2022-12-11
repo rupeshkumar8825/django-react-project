@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from api.views import articleList, index;
+from api.views import articleDetails, articleList, index;
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     # now we have to map the index view that we have created inside the api application that we have made 
     path("", index),
     path("articles/", articleList),
+    path("articles/<int:pk>", articleDetails),
 ]
